@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background: #583E72;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #E2C6A7;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+  // width: 1600px;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.box {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+  }
+
+  &__days h2{
+    text-align: center;
+  }
+
+
+  &__days { 
+    
+    &_information {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      border: 2px solid  #E2C6A7;   
+    }
+
+    &_information h2{
+      text-align: center;     
+    } 
+
+    &_information p{
+      padding-left: 5px;     
+    }
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5px 5px 5px;
+
+    &_signup {
+      padding: 3px;
+      background-color: #E2C6A7;
+      border-radius: 1px solid #583E72;
+      color: #583E72;
+      cursor: pointer;
+    }
+
+    &_cancel {
+      padding: 3px;
+      background-color: #E2C6A7;
+      border-radius: 1px solid #583E72;
+      color: #583E72;
+      cursor: pointer;
+    }
+  }
+}
