@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  scroll-behavior: smooth;
+  background: #583E72;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  color: #E2C6A7;
+  height: 100vh;
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.style {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.style h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.photo-container {
+  display: flex;
+  align-content: center;
+}
+
+.like__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.like__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.like__btn:hover {
+  content: url(./img/heart3.png); 
+}
+
